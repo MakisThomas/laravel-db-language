@@ -1,0 +1,19 @@
+{
+    "name": "makth/laravel-db-language",
+    "description": "Laravel command to add language fields on database",
+    "license": "MIT",
+    "keywords": ["laravel", "language", "database language"],
+    "authors": [
+        {
+            "name": "Makis Thomas",
+            "email": "naoythoma@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Makth\\DbLanguage\\" : "src/"
+        }
+    }
+}
