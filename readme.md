@@ -8,7 +8,9 @@ This package gives you an easy way to generate automatically all language fields
 First, pull in the package through Composer.
 
 ```
-composer require makth/laravel-db-language
+"require":{
+    "makth/laravel-db-language":  "1.0.*"
+}
 ```
 
 And then include the service provider within `config/app.php`.
