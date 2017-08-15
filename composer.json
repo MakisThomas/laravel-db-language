@@ -9,7 +9,6 @@
             "email": "naoythoma@hotmail.com"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
         "php": ">=5.5"
     },
