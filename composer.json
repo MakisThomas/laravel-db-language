@@ -9,8 +9,9 @@
             "email": "naoythoma@hotmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": ">=5.5"
+    },
     "autoload":{
         "psr-4":{
             "Makth\\DbLanguage\\" : "src/"
