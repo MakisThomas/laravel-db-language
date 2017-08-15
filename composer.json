@@ -9,7 +9,7 @@
             "email": "naoythoma@hotmail.com"
         }
     ],
-    "minimum-stability":  "dev",
+    "minimum-stability":  "stable",
     "version": "1.0",
     "require": {
         "php": ">=5.5"
