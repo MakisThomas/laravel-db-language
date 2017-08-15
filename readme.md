@@ -1,25 +1,25 @@
 # Laravel DB Language 
 
-This package gives you an easy way to generate automatically all language fields on database, using Laravel command.  If you have on database fields like `body_en` and you want to create new like `body_it` you can use this package to create it.
+This package gives you an easy way to generate automatically all language fields on database, using Laravel 5 command.  If you have on database fields like `body_en` and you want to create new like `body_it` you can use this package to create it.
 
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+First, pull in the package through Composer.
 
 ```
-Give the example
+"require": {
+    "makth/laravel-db-language": "~1.4"
+}
 ```
 
-And repeat
+And then include the service provider within `config/app.php`.
 
 ```
-until finished
+Makth\DbLanguage\DbLanguageServiceProvider::class
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+
 
 
 ### Usage 
