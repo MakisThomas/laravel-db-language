@@ -1,4 +1,4 @@
-# Laravel DB Language 
+# Laravel DB Language
 
 This package gives you an easy way to generate automatically all language fields on database, using Laravel 5 command.  If you have on database fields like `body_en` and you want to create new like `body_it` you can use this package to create it.
 
@@ -20,23 +20,23 @@ Makth\DbLanguage\DbLanguageServiceProvider::class
 
 
 
-### Usage 
+### Usage
 
 ```
 php artisan language:add German
 ```
-It finds all `*_en` fields on database an generates matches `*_de`.
+It finds all `*_en` fields on database and generate matches `*_de`.
 
 The default language is English, but you can change it using option `--default`. For example:
 ```
 php artisan language:add German --default="French"
 ```
-These will create on database all matches `*_de` from `*_fr`.
+This will create on database all matches `*_de` from `*_fr`.
 
 
 ### Authors
 
-* **Makis Thomas** 
+* **Makis Thomas**
 
 
 ### License
