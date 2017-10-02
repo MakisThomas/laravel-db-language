@@ -11,6 +11,7 @@
     ],
     "require": {
         "php": ">=5.5",
+        "components/flag-icon-css": "*",
         "doctrine/dbal":"~2.3"
     },
     "autoload":{
