@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Makth\DbLanguage;
 
@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 class DbMap{
 
 
-	 /**
+	/**
      * it gets all the names of db tables
      *
      * @return \Illuminate\Support\Collection
