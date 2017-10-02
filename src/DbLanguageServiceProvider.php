@@ -27,7 +27,7 @@ class DbLanguageServiceProvider extends ServiceProvider
         ], 'config');
 
         $this->publishes([
-        __DIR__.'/../flags/flag-icon-css-master' => public_path('vendor/flag-icon-css-master')
+        __DIR__.'/../flags/flag-icon-css' => public_path('vendor/flag-icon-css')
         ], 'flags');
 
         $this->loadViewsFrom(__DIR__.'/views/fields', 'fields');

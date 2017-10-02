@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('vendor/flag-icon-css-master/css/flag-icon.min.css') }}">
+<link rel="stylesheet" href="{{ asset('vendor/flag-icon-css/css/flag-icon.min.css') }}">
 <style>
     .dropdown{
         display: inline;
