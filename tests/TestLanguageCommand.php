@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class TestLanguageCommand extends TestCase
 {
-    use DatabaseMigrations;
+//    use DatabaseMigrations;
 
     /** @test */
     public function a_user_can_add_a_language()
@@ -36,5 +36,15 @@ class TestLanguageCommand extends TestCase
         Artisan::call("language:add", ['lang' => 'Spanish', '--default' => 'Greek']);
         $this->assertContains('Language added with success', Artisan::output());
     }
+
+    /** @test */
+    public function a_user_can_remove_a_language()
+    {
+        Artisan::call("language:add", ['lang' => 'Spanish', '--default' => 'Greek']);
+
+        Artisan::call("language:remove", ['lang'=>'Spanish']);
+        $this->assertContains('Language removed with success', Artisan::output());
+    }
+    
 
 }

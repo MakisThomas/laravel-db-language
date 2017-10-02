@@ -5,7 +5,7 @@ namespace Makth\DbLanguage\Console\Commands;
 use Illuminate\Console\Command;
 use Makth\DbLanguage\Command\DbLanguage;
 
-class AddDbLanguageFields extends Command
+class RemoveDbLanguageFields extends Command
 {
 
     protected $lang;
@@ -16,7 +16,7 @@ class AddDbLanguageFields extends Command
      *
      * @var string
      */
-    protected $signature = 'language:add { lang } { --default= }';
+    protected $signature = 'language:remove { lang }';
 
 
     /**
@@ -24,7 +24,7 @@ class AddDbLanguageFields extends Command
      *
      * @var string
      */
-    protected $description = 'Add language fields in the database';
+    protected $description = 'Remove language fields from database';
 
 
     /**
@@ -48,14 +48,9 @@ class AddDbLanguageFields extends Command
     {
         $lang = $this->argument('lang');
 
-        ($defaultLang = $this->option('default'))
-            ? $this->lang->setDefaultLang($defaultLang)
-            : $this->lang->setDefaultLang(config('lang.default_lang'));
-
-
         (!$this->lang->languageExists($lang))
             ? $this->error("Language not found...")
-            : $this->info($this->lang->add($lang, $this->output));
+            : $this->info($this->lang->remove($lang, $this->output));
     }
 
 
