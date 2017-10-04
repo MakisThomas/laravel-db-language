@@ -19,11 +19,12 @@ class Lang extends Fields
     /**
      * @param $tableName
      * @param $field
+     * @param array $values
      * @param null $defaultLanguage
      * @param array $options
      * @return HtmlString
      */
-    public function fields($tableName, $field, $defaultLanguage = null, $options = [])
+    public function fields($tableName, $field, $values = [], $defaultLanguage = null, $options = [])
     {
 
         $defaultLanguage = ($defaultLanguage == null) ? config('app.locale') : $defaultLanguage;
@@ -33,6 +34,7 @@ class Lang extends Fields
         return new HtmlString(view($this->view, [
             'fields' => $languageFields['fields'],
             'type' => $languageFields['type'],
+            'values' => $values,
             'defaultLanguage' => $defaultLanguage,
             'option' => $options
         ]));

@@ -14,6 +14,7 @@
                        class="form-control {{ (substr($field, -2) == $defaultLanguage)?'':'hidden' }}"
                        placeholder="{{ $option['placeholder'] ? $option['placeholder'] :'' }}"
                        required="{{ $option['required'] ? $option['required']  :'' }}"
+                       value="{{ (!empty($values)) ? $values[$index] : null }}"
                 >
             @endforeach
             <div class="input-group-btn btn_lang">
@@ -65,7 +66,8 @@
                     placeholder="{{ $option['placeholder'] ? $option['placeholder'] : '' }}"
                     required="{{ $option['required'] ? $option['required'] : '' }}"
                     rows="10"
-            ></textarea>
+            >{{ (!empty($values)) ? $values[$index] : null }}</textarea>
+
         @endforeach
     </div>
 @endif
