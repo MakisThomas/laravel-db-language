@@ -57,8 +57,11 @@ php artisan language:add German --default="English"
 If you want to have more than one languages, you set your main (already installed) language as default, and you add the other languages. 
 
 
-### Config File
-.....
+### Config
+You can publish config file `lang.php`, and set your default language there.
+```
+php artisan vendor:publish --tag=config
+```
 
 
 ### Language Field
