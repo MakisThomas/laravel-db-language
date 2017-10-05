@@ -25,7 +25,9 @@
                 <ul class="dropdown-menu dropdown-menu-right">
                     @foreach($fields as $field)
                         <li class="{{ (substr($field, -2) == $defaultLanguage)?'active':'' }}">
-                            <a href="#" data-code="{{ substr($field, -2) }}">
+                            <a href="#"
+                                data-code="{{ substr($field, -2) }}"
+                                data-lang_code="{{ Lang::convertLocaleToCountryCode(substr($field, -2)) }}">
                                 <span class="flag-icon flag-icon-{{ Lang::convertLocaleToCountryCode(substr($field, -2)) }}"></span>
                             </a>
                         </li>

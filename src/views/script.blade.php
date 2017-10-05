@@ -7,7 +7,7 @@
                 ? $(this).removeClass('hidden')
                 : $(this).removeClass('hidden').addClass('hidden')
         });
-        $(this).closest('.btn_lang').find('button i').removeClass().addClass('flag-icon flag-icon-'+$(this).data('code'));
+        $(this).closest('.btn_lang').find('button i').removeClass().addClass('flag-icon flag-icon-'+$(this).data('lang_code'));
         $(this).parent().parent().find('.active').removeClass('active');
         $(this).parent().addClass('active');
     });
