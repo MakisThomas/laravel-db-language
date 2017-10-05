@@ -90,14 +90,14 @@ And now you can get the form field with all installed languages like this:
     'field_name', 
     ['first_language_value', 'second_language_value'], 
     null,
-    [ 'placeholder' => 'Name', 'required' => 'required']
+    ['placeholder' => 'Name', 'required' => 'required']
     ) 
 }}
 ```
 - `table_name` : the name of the db table.
 - `field_name` : the name of table field, without language extension.
 - the third parameter is an array with languages values.
-- the fourth parameter used to set manual the default language.
+- the fourth parameter used to sets manual the default language.
 - the fifth parameter is an array with extra attributes for the fields.
 
 For form fields used twitter bootstrap, and for the flags [this](https://github.com/lipis/flag-icon-css) package. 
