@@ -13,9 +13,9 @@ composer require makth/laravel-db-language
 
 or
 
-```
+```php
 "require":{
-    "makth/laravel-db-language":  "2.0"
+    "makth/laravel-db-language": "2.0"
 }
 ```
 
